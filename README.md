@@ -33,16 +33,16 @@ Node-Spotify-API
 ![](/screenshots/concert.png)
 
 **`node liri.js spotify-this-song "<song name here>"`**
-![](/screenshots/song with title.png)
+![](/screenshots/song_with_title.png)
 
 **`node liri.js spotify-this-song`**
-![](/screenshots/song without title.png)
+![](/screenshots/song_without_title.png)
 
 **`node liri.js movie-this "<movie title here>"`**
-![](/screenshots/movie with title.png)
+![](/screenshots/movie_with_title.png)
 
 **`node liri.js movie-this`**
-![](/screenshots/movie without title.png)
+![](/screenshots/movie_without_title.png)
 
 **`node liri.js do-what-it-says`**
-![](/screenshots/prest song.png)
+![](/screenshots/prest_song.png)
