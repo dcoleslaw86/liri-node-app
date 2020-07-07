@@ -15,17 +15,17 @@ Using text commands to find Concerts based on artists, Information on a Movie, o
 
 ### Technologies Used:
 
-Node.js
-Javascript
-API
-Spotify
-OMDB
-Bands in Town
-NPM Modues
-Dotenv
-Axios
-Moment
-Node-Spotify-API
+Node.js,
+Javascript,
+API,
+Spotify,
+OMDB,
+Bands in Town,
+NPM Modues,
+Dotenv,
+Axios,
+Moment,
+Node-Spotify-API,
 
 ### Screenshot of working app with accompaning functions
 
@@ -51,10 +51,10 @@ Node-Spotify-API
 
 **`node liri.js movie-this`**
 
-![](/screenshots/movie_without_title.png)
+![](/screenshots/movie_blank.png)
 
 
 **`node liri.js do-what-it-says`**
 
-![](/screenshots/prest_song.png)
+![](/screenshots/preset_song.png)
 
