@@ -5,11 +5,9 @@ var keys = require("./keys.js");
 //Access keys information
 var Spotify = require("node-spotify-api");
 var spotify = new Spotify(keys.spotify);
-var request = require("request");
 var fs = require("fs");
 var moment = require("moment");
 var axios = require("axios");
-
 
 // let input = process.argv.slice(2);
 // let command = input[0];
@@ -28,11 +26,11 @@ var command = process.argv[2];
         case "concert-this": let artist = process.argv[3]
             request("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp", function (error, response, body) {
             if (!error) {
-                console.log("-------------------------------------");
+                console.log("***********************************************");
                 console.log("Venue: " + JSON.parse(body)[0].venue.name);
                 console.log("Location: " + JSON.parse(body)[0].venue.city + " " + JSON.parse(body)[0].venue.region);
                 console.log("Date: " + moment(JSON.parse(body)[0].datetime).format("MM/DD/YYYY"));
-                console.log("-------------------------------------");
+                console.log("***********************************************");
                 }else{
                     console.log(error);
                 }
@@ -47,12 +45,13 @@ var command = process.argv[2];
                     if(err){
                         return console.log("ERROR: " + err)
                     }
-                    console.log("-------------------------------------");
+                    console.log("***********************************************");
                     console.log("Artist: " + data.tracks.items[0].artists[0].name);
                     console.log("Song Name: " + data.tracks.items[0].name);
                     console.log("Preview Link: " + data.tracks.items[0].preview_url);
                     console.log("Album: " + data.tracks.items[0].album.name);
-                    console.log("-------------------------------------");
+                    console.log("Released: " + data.tracks.items[0].year);
+                    console.log("***********************************************");
                     })
 
         break;
@@ -60,7 +59,7 @@ var command = process.argv[2];
         case "movie-this": let movie = process.argv[3]
             if(movie === undefined){movie = "Pink Panther"; }request("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
                 if (!error) {
-                    console.log("-------------------------------------");
+                    console.log("***********************************************");
                     console.log("Title: " + JSON.parse(body).Title);
                     console.log("Year Released: " + JSON.parse(body).Year);
                     console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
@@ -69,7 +68,7 @@ var command = process.argv[2];
                     console.log("Language: " + JSON.parse(body).Language);
                     console.log("Plot: " + JSON.parse(body).Plot);
                     console.log("Actors: " + JSON.parse(body).Actors);
-                    console.log("-------------------------------------");
+                    console.log("***********************************************");
                 }
             });
 
@@ -92,12 +91,12 @@ function random(){
                 if(err){
                     return console.log("ERROR: " + err)
                 }
-                console.log("-------------------------------------");
+                console.log("***********************************************");
                 console.log("Artist: " + data.tracks.items[0].artists[0].name);
                 console.log("Song Name: " + data.tracks.items[0].name);
                 console.log("Preview Link: " + data.tracks.items[0].preview_url);
                 console.log("Album: " + data.tracks.items[0].album.name);
-                console.log("-------------------------------------");
+                console.log("***********************************************");
                 })
     })
 }
