@@ -30,19 +30,30 @@ Node-Spotify-API
 ### Screenshot of working app with accompaning functions
 
 **`node liri.js concert-this <artist name here>`**
+
 ![](/screenshots/concert.png)
 
+
 **`node liri.js spotify-this-song "<song name here>"`**
+
 ![](/screenshots/song_with_title.png)
 
+
 **`node liri.js spotify-this-song`**
+
 ![](/screenshots/song_without_title.png)
 
+
 **`node liri.js movie-this "<movie title here>"`**
+
 ![](/screenshots/movie_with_title.png)
 
+
 **`node liri.js movie-this`**
+
 ![](/screenshots/movie_without_title.png)
 
+
 **`node liri.js do-what-it-says`**
+
 ![](/screenshots/prest_song.png)
