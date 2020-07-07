@@ -8,10 +8,10 @@ var spotify = new Spotify(keys.spotify);
 var request = require("request");
 var fs = require("fs");
 var moment = require("moment");
-// var axios = require("axios");
+var axios = require("axios");
 
 
-let input = process.argv.slice(2);
+// let input = process.argv.slice(2);
 // let command = input[0];
 // let param = input.slice(1);
 
@@ -101,5 +101,3 @@ function random(){
                 })
     })
 }
-
-
