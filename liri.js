@@ -4,10 +4,11 @@ require("dotenv").config();
 var keys = require("./keys.js");
 //Access keys information
 var Spotify = require("node-spotify-api");
-var spotify = new Spotify(keys.spotify);
-var fs = require("fs");
-var moment = require("moment");
 var axios = require("axios");
+var moment = require("moment");
+var fs = require("fs");
+var spotify = new Spotify(keys.spotify);
+var request = require("request");
 
 // let input = process.argv.slice(2);
 // let command = input[0];

@@ -26,3 +26,23 @@ Dotenv
 Axios
 Moment
 Node-Spotify-API
+
+### Screenshot of working app with accompaning functions
+
+**`node liri.js concert-this <artist name here>`**
+![](/screenshots/concert.png)
+
+**`node liri.js spotify-this-song "<song name here>"`**
+![](/screenshots/song with title.png)
+
+**`node liri.js spotify-this-song`**
+![](/screenshots/song without title.png)
+
+**`node liri.js movie-this "<movie title here>"`**
+![](/screenshots/movie with title.png)
+
+**`node liri.js movie-this`**
+![](/screenshots/movie without title.png)
+
+**`node liri.js do-what-it-says`**
+![](/screenshots/prest song.png)
